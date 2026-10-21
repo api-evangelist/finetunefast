@@ -1,23 +1,69 @@
 aid: finetunefast
+
 name: FinetuneFast
-description: 'FinetuneFast is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'FinetuneFast provides a turnkey platform to launch and fine‑tune AI models quickly. The service offers boilerplate code and infrastructure for text‑to‑image, large language models, and retrieval‑augmented generation, enabling developers to build production‑ready AI applications in days rather than weeks. With support for popular models such as FLUX.1‑schnell, Mistral‑7B, GPT‑4o‑mini, and Pixtral, FinetuneFast aims to accelerate AI innovation for startups and enterprises alike.'
+
 url: https://raw.githubusercontent.com/api-evangelist/finetunefast/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+image: https://www.finetunefast.com/assets/logo.png
+
+x-tier-reason: enrichment pass 2026-10-20 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-20'
+
 modified: '2026-10-20'
+
 tags:
 - Company
-apis: []
+- AI
+- Machine-Learning
+- Platform
+- Startup
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/finetunefast-hosts.yml
+- type: Vendors
+  url: vendors/finetunefast-vendors.yml
+- type: TermsOfService
+  url: https://www.finetunefast.com/terms-of-services
+- type: PrivacyPolicy
+  url: https://www.finetunefast.com/privacy-policy
+- type: DomainSecurity
+  url: security/finetunefast-domain-security.yml
 - type: Website
   url: https://finetunefast.com/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-20'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://finetunefast.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-20'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

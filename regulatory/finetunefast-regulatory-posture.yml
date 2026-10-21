@@ -1,0 +1,13 @@
+generated: '2026-10-21'
+method: probed
+source: https://www.finetunefast.com/privacy-policy
+signals:
+  data_retention:
+    url: https://www.finetunefast.com/privacy-policy
+    section: Privacy Policy
+    note: Retains data only as long as necessary for service provision.
+    evidence:
+      - source: https://www.finetunefast.com/privacy-policy
+        http_status: 200
+        fetched: finetunefast-privacy.html
+        quote: "We only retain collected information for as long as necessary to provide your requested service."
